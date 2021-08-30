@@ -1,0 +1,31 @@
+{
+  "name": "betterhelp",
+  "version": "1.0.0",
+  "description": "Better Help code challenge",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "seed": "node ./seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ampfour/betterhelp.git"
+  },
+  "author": "Troy Gardner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ampfour/betterhelp/issues"
+  },
+  "homepage": "https://github.com/ampfour/betterhelp#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  }
+}
