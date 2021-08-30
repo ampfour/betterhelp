@@ -17,7 +17,7 @@ app.use(express.urlencoded({
   extended: true
 }))
 
-app.use(morgan('combined'))
+app.use(morgan('dev'))
 app.use(cors())
 app.use(express.static('public'))
 

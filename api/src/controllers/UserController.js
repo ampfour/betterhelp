@@ -1,5 +1,6 @@
 const { User } = require('../models')
-const Op = require('Sequelize').Op
+const db = require('../models')
+const { QueryTypes } = require('sequelize')
 
 module.exports = {
   async getUsers (req, res) {
@@ -17,6 +18,24 @@ module.exports = {
       // throw err
       res.status(400).send({
         error: 'There are not users in system.'
+      })
+    }
+  },
+
+  async getActiveUsers (req, res) {
+    try {
+      const users = await db.sequel.query('SELECT * FROM `Users` WHERE `active` = true', {
+        model: User,
+        mapToModel: true,
+        type: QueryTypes.SELECT
+      })
+
+      console.log('testing', users)
+
+      res.send(users)
+    } catch (err) {
+      res.status(404).send({
+        error: 'Users Not Found.'
       })
     }
   },

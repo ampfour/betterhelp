@@ -1,0 +1,20 @@
+[
+  {
+    "email": "troymgardner@gmail.com",
+    "firstName": "Troy",
+    "lastName": "Gardner",
+    "active": true
+  },
+  {
+    "email": "john@doe.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "active": true
+  },
+  {
+    "email": "john@theduke.com",
+    "firstName": "John",
+    "lastName": "Wayne",
+    "active": true
+  }
+]
